@@ -13,7 +13,7 @@ git submodule init
 git submodule update
 ```
 
-Getting the Maxmine GeoLite GeoIP Data
+Getting the Maxmind GeoLite GeoIP Data
 --------------------------------------
 
 ``` bash
