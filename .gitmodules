@@ -1,0 +1,3 @@
+[submodule "lib/geoip-api-php"]
+	path = lib/geoip-api-php
+	url = https://github.com/maxmind/geoip-api-php.git
