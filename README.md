@@ -24,6 +24,7 @@ wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat
 for i in *.gz; do gunzip $i; done
 ```
 
+If you follow this exactly, it will prevent the GeoIP database files from being added to your repositories because that directory is in the .gitignore file.
 
 Acknowledgements
 ----------------
