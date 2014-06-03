@@ -10,12 +10,12 @@ $ipver = ipVersion($ip);
 
 if($ipver == 4)
 {
-  $gi = geoip_open($GEOIP_PATH . "/GeoIPCity.dat", GEOIP_STANDARD);
+  $gi = geoip_open($GEOIP_PATH . "/GeoLiteCity.dat", GEOIP_STANDARD);
   $record = geoip_record_by_addr($gi, $ip);
 
 } elseif($ipver == 6)
 {
-  $gi = geoip_open($GEOIP_PATH . "/GeoIPCityv6.dat", GEOIP_STANDARD);
+  $gi = geoip_open($GEOIP_PATH . "/GeoLiteCityv6.dat", GEOIP_STANDARD);
   $record = geoip_record_by_addr_v6($gi, $ip);
 
 } else
