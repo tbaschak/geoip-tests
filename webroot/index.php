@@ -5,7 +5,7 @@ $list = array(
 	"country" => "country.php"
 	);
 ?>
-<h1>List of tests</h1>
+<h1>List of geoip-tests</h1>
 <ul>
 <?php
 foreach ($list as $i => $value) {
