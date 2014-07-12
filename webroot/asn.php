@@ -4,7 +4,8 @@ include("../inc/config.inc.php");
 include("../inc/hcdn.geoip.php");
 include("../lib/geoip-api-php/src/geoip.inc");
 
-$ip = $_SERVER["REMOTE_ADDR"];
+//$ip = $_SERVER["REMOTE_ADDR"];
+$ip = $_SERVER["HTTP_X_REAL_IP"];
 $ipver = ipVersion($ip);
 
 if($ipver == 4)

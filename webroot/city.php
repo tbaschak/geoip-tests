@@ -5,7 +5,8 @@ include("../inc/hcdn.geoip.php");
 include("../lib/geoip-api-php/src/geoipcity.inc");
 include("../lib/geoip-api-php/src/geoipregionvars.php");
 
-$ip = $_SERVER["REMOTE_ADDR"];
+//$ip = $_SERVER["REMOTE_ADDR"];
+$ip = $_SERVER["HTTP_X_REAL_IP"];
 $ipver = ipVersion($ip);
 
 if($ipver == 4)
